@@ -1,12 +1,12 @@
-function a(){
-var image = document.getElementById("Logo").files[0];
+function CheckImageSize(){
+var image = document.getElementById("Image").files[0];
            createReader(image, function (w, h) {
 
-alert(w+" "+h);
-            });
-            // end checking
-
+                alert("Width is: " + w + " And Height is: "+h);
+});            
 }
+
+
   function  createReader(file, whenReady) {
         var reader = new FileReader;
         reader.onload = function (evt) {
